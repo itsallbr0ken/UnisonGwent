@@ -11,6 +11,7 @@ import { Platform, StyleSheet, Text, View, FlatList, ActivityIndicator } from 'r
 import { Icon, Header, Card, Button } from 'react-native-elements'
 
 type Props = {};
+
 export default class News extends Component<Props> {
     static navigationOptions = {
         tabBarLabel: "Latest News",
@@ -43,7 +44,12 @@ export default class News extends Component<Props> {
                         dataSource: responseJson
                     },
                     function () {
-                        console.log("Data", responseJson)
+
+
+                        // console.log("responseJson", responseJson)
+
+
+
                     }
                 );
             })
